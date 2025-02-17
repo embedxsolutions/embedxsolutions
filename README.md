@@ -5,6 +5,6 @@
 - 📫 You can reach me on my email abhishekmahuvagara@hotmail.com or phone +91 82007 26018
 
 <!---
-ddembeddedservices/ddembeddedservices is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+embedxsolutions/embedxsolutions is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->

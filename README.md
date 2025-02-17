@@ -1,4 +1,4 @@
-- 👋 Hi, I’m Abhishek Mahuvagara from DD Embedded Services.
+- 👋 Hi, I’m Abhishek Mahuvagara from EmbedX Solutions.
 - 👀 I’m interested in developing software for microcontroller for different different applications.
 - 🌱 I’m currently working in Automotive industry as an embedded software developer.
 - 💞️ I’m looking to collaborate on projects on microcontrolle

@@ -6,6 +6,14 @@
   <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 <body>
 
   <header>

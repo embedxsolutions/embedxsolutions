@@ -152,6 +152,7 @@ a:hover{
 /* --------------------------- footer style --------------------------- */
 
 #footer{
+	margin-top: auto;
 	clear:both;
 	background-color:#323333;
 	color:#fff;

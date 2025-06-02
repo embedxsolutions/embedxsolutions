@@ -38,7 +38,7 @@ a:hover{
 
 #head{
 	height:60px;
-	background-color:#333;
+	background-color:#175977;
 	padding-top:25px;
 }
 
@@ -87,7 +87,7 @@ a:hover{
 }
 
 #main h2{
-	color:#00cbad;
+	color:#113265;
 	padding:15px 0 15px 0;
 }
 
@@ -146,30 +146,6 @@ a:hover{
 	padding:5px 0;
 	margin:10px 20px 10px 20px;
 	text-align:center;
-}
-
-
-/* --------------------------- footer style --------------------------- */
-
-#footer{
-	clear:both;
-	background-color:#323333;
-	color:#fff;
-}
-
-#footer-container{
-	padding:10px 0;
-	margin-top: auto;
-	overflow:hidden;
-}
-
-#address{
-	float:left;
-}
-
-#menu-bottom{
-	float:right;
-	text-align:right;
 }
 
 /* ------------------ inner page style -----------------*/

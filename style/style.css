@@ -1,184 +1,118 @@
-@charset "utf-8";
-/* CSS Document */
-
-body, h1, h2, h3, h4, h5, h6, blockquote, p, form, input, ul, li, div {
-	margin: 0;
-	padding: 0;
-}
-body{
-	margin:0;
-	color:#333;
-	font-family:Tahoma;
-	font-size:12px;
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2{
-	font-size:18px;
+/* Base Settings */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-h3{
-	font-size:12px;
-	padding:10px 0; 
+/* Header */
+header {
+  background-color: #002f5f;
+  color: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-a:link, a:visited{
-	color:#aafbef;
-	text-decoration:none;
+header h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 
-a:hover{
-	color:#fff;
+/* Navigation */
+nav {
+  background-color: #004080;
+  padding: 0.75rem 2rem;
+  text-align: center;
 }
 
-#container, #header, #banner, #footer-container{
-	width:950px;
-	margin:0 auto 0 auto;
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
 }
 
-
-#head{
-	height:60px;
-	background-color:#175977;
-	padding-top:25px;
+nav a:hover {
+  text-decoration: underline;
 }
 
-#logo{
-	float:left;
-	width:264px;
-	padding-right:20px;
+/* Main Content */
+main {
+  flex: 1;
+  padding: 2rem;
 }
 
-#menu{
-	padding-top:10px;
-	text-align:right;
+section {
+  margin-bottom: 2rem;
 }
 
-#menu li{
-    display:inline;
-	list-style:none;
-	/*margin-left:5px;*/
-	padding:10px;
+section h2 {
+  color: #002f5f;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
 
-#menu a{
-	padding:5px;
-	color:#aafbef;
+section p {
+  line-height: 1.6;
 }
 
-#menu a:link, #menu a:visited{
-	color:#fff;
+/* Services */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
 }
 
-
-#banner{
-	padding-top:10px;
+.service-box {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
 }
 
-/* ----------------------- content style -------------------------*/
-
-#top{
-	padding:10px 0 0 0;
+.service-box:hover {
+  transform: translateY(-5px);
 }
 
-#main{
-	float:left;
-	width:620px;
-	padding:0 15px 10px 10px;
+.service-box h3 {
+  color: #004080;
+  margin-bottom: 1rem;
 }
 
-#main h2{
-	color:#113265;
-	padding:15px 0 15px 0;
+/* Footer */
+footer {
+  background-color: #002f5f;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
 }
 
-#main p{
-	padding:0 0 5px 0;
-}
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
 
-#sidebar, .box{
-	float:left;
-	width:300px;
-	background-color:#cae1e1;
-	padding:0 0 10px 0;
-	}
-
-.align{
-	margin-right:22px;
-}
-
-#sidebar p, #sidebar h3, .box p{
-	padding:10px 20px 0 20px;
-}
-
-#sidebar h2, .box h2{
-	text-align:center;
-	padding:10px 0 0 0;
-}
-
-#sidebar a:link, #sidebar a :visited{
-	color:#333;
-}
-
-#sidebar a:hover{
-	text-decoration:underline;
-}
-
-
-.box{
-	margin-top:10px;
-	margin-bottom:10px;
-}
-
-.img{
-	text-align:center;
-	padding:0;
-}
-
-.box-image{
-	text-align:center;
-	padding:10px 0 0 0;
-}
-
-.box-link-background{
-	background-color:#323333;
-	color:#aafbef;
-	width:70px;
-	padding:5px 0;
-	margin:10px 20px 10px 20px;
-	text-align:center;
-}
-
-/* ------------------ inner page style -----------------*/
-
-.inner-list{
-	list-style:circle;
-	padding-left:20px;
-}
-
-.name{
-	font-weight:bold;
-	font-style:italic;
-	text-align:right;
-}
-
-/* ------------------ contact style -----------------*/
-
-form{
-	margin-top:10px;
-}
-
-.form-element{
-	width:350px;
-	height:20px;
-}
-
-.form-area{
-	width:350px;
-	height:200px;
-}
-
-/* --------------------------- footer style --------------------------- */
-
-footer{
-	margin-top: auto;
+  .services {
+    flex-direction: column;
+    align-items: center;
+  }
 }

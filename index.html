@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EmbedX Solutions</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="style/style.css" type="text/css"/>
 </head>
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 <body>
-  <header>
-    <h1>EmbedX Solutions</h1>
-  </header>
-
-  <nav>
-    <a href="#about">Who We Are</a>
-    <a href="#expertise">Our Expertise</a>
-    <a href="#why">Why Choose Us</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <main>
-    <section id="about">
-      <h2>Who We Are</h2>
-      <p>At EmbedX Solutions, we are a team of passionate engineers and innovators specializing in embedded software development. We design and deliver high-performance systems tailored to modern industry needs.</p>
-    </section>
-
-    <section id="expertise">
-      <h2>Our Expertise</h2>
-      <div class="services">
-        <div class="service-box">
-          <h3>Firmware Development</h3>
-          <p>Efficient code for microcontrollers, RTOS, and device control systems.</p>
-        </div>
-        <div class="service-box">
-          <h3>IoT Integration</h3>
-          <p>Connectivity and communication for smart devices and remote monitoring.</p>
-        </div>
-        <div class="service-box">
-          <h3>Custom PCB Design</h3>
-          <p>From schematics to prototyping with high-quality PCB layout and manufacturing support.</p>
-        </div>
-        <div class="service-box">
-          <h3>System Optimization</h3>
-          <p>Testing, debugging, and improving embedded performance for real-world applications.</p>
-        </div>
+  <div id="wrapper">
+  <div id="head">
+    <div id="header">
+      <div id="logo"> <img src="images/EmbedX.png" alt="" width="70" height="70" /> </div>
+      <!--end logo-->
+      <div id="menu">
+        <ul id="menu_list">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-    </section>
-
-    <section id="why">
-      <h2>Why Choose Us</h2>
-      <p>✅ Innovation-Driven: We embrace new technologies.<br>
-         ✅ Client-Focused: Tailored solutions to meet your goals.<br>
-         ✅ Quality First: Reliable and high-performing systems.<br>
-         ✅ Agile & Adaptive: Responsive to your evolving needs.<br>
-         ✅ Passionate Engineers: Embedded systems are our passion.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Email: contact@embedxsolutions.com<br>
-         Phone: +1-234-567-8900<br>
-         Address: 123 Innovation Drive, Tech City</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 EmbedX Solutions. All rights reserved.</p>
-  </footer>
+      <!--end menu-->
+    </div>
+    <!--end header-->
+  </div>
+   <!-- <div id="banner"><img src="images/financial_07.jpg" alt="" width="946" height="400" /></div> -->
+  <div id="container">
+    <div id="top">
+      <div id="main">
+        <h2>Welcome to EmbedX Solutions</h2>
+        <p>At EmbedX Solutions, we are a team of passionate engineers and innovators specializing in embedded software development. Driven by a commitment to excellence, we design, develop, and deliver high-performance solutions that power the devices of tomorrow. Our focus is on creating smart, reliable, and scalable systems tailored to industry needs—from prototyping to deployment.</p>
+        <p></p>
+        <h2>Why choose us!</h2>
+        <h3>Innovation-Driven</h3>
+        <p>We embrace new technologies to stay ahead of the curve.</p>
+        <h3>Client-Focused</h3>
+        <p>Every solution is tailored to meet your unique goals.</p>
+        <h3>Quality First</h3>
+        <p>We ensure robust, reliable performance in every system we build.</p>
+        <h3>Passion</h3>
+        <p>This is not just our work—it's what we love to do.</p>
+      </div>
+      <!-- end main -->
+    </div>
+    <!-- end top -->
+  </div>
+  <!-- end container -->
 </body>
+
+<footer>
+  <p>© 2025 EmbedX Solutions. All rights reserved.</p>
+</footer>
+
 </html>

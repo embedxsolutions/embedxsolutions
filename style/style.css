@@ -152,7 +152,6 @@ a:hover{
 /* --------------------------- footer style --------------------------- */
 
 #footer{
-	margin-top: auto;
 	clear:both;
 	background-color:#323333;
 	color:#fff;
@@ -160,7 +159,7 @@ a:hover{
 
 #footer-container{
 	padding:10px 0;
-	margin-top:10px;
+	margin-top: auto;
 	overflow:hidden;
 }
 

@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css">
+  <title>EmbedX Solutions</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="style/style.css" type="text/css"/>
 </head>
+<script>
+  const toggleButton = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  toggleButton.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
 <body>
 
   <header>
@@ -22,7 +29,7 @@
   </section>
 
   <footer>
-    <p>© 2025 [Your Name]. All rights reserved.</p>
+    <p>© 2025 EmbedX Solutions. All rights reserved.</p>
   </footer>
 
 </body>

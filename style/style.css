@@ -10,7 +10,22 @@ header {
   background-color: #004080;
   color: white;
   padding: 1rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+}
+
+header img {
+  height: 50px;
+}
+
+.company-name {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 
 main {
@@ -60,6 +75,11 @@ nav a.active {
 
   nav a {
     width: 100%;
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
     text-align: center;
   }
 }

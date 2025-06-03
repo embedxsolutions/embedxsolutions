@@ -29,22 +29,27 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
   background-color: #004080;
   padding: 0.75rem 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 1rem;
   font-weight: 500;
+  position: relative;
+  padding: 0.5rem 1rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav a:hover,
+nav a.active {
+  background-color: #0066cc;
+  border-radius: 5px;
 }
 
 /* Main Content */
@@ -102,6 +107,15 @@ footer {
   padding: 1rem;
   text-align: center;
   margin-top: auto;
+}
+
+/* About Us */
+.AboutUs{
+
+}
+
+.mission-box{
+  
 }
 
 /* Responsive */

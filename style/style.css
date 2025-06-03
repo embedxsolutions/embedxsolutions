@@ -1,32 +1,30 @@
-/* Global Reset */
-* {
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background-color: #f4f4f4;
 }
 
-/* Base Settings */
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f4f7fa;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Header */
 header {
-  background-color: #002f5f;
+  background-color: #004080;
   color: white;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 2rem;
-  letter-spacing: 1px;
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Navigation Bar */
@@ -35,15 +33,16 @@ nav {
   padding: 0.75rem 2rem;
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  position: relative;
   padding: 0.5rem 1rem;
+  display: inline-block;
 }
 
 nav a:hover,
@@ -52,81 +51,38 @@ nav a.active {
   border-radius: 5px;
 }
 
-/* Main Content */
-main {
-  flex: 1;
-  padding: 2rem;
+/* Responsive Menu */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
 }
 
-section {
-  margin-bottom: 2rem;
-}
-
-section h2 {
-  color: #002f5f;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-section p {
-  line-height: 1.6;
-}
-
-/* Services */
+/* Services Section */
 .services {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-around;
+  padding: 2rem 0;
 }
 
 .service-box {
   background: white;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
-  flex: 1 1 250px;
-  max-width: 300px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-}
-
-.service-box:hover {
-  transform: translateY(-5px);
+  flex: 1 1 300px;
+  max-width: 400px;
 }
 
 .service-box h3 {
+  margin-top: 0;
   color: #004080;
-  margin-bottom: 1rem;
-}
-
-/* Footer */
-footer {
-  background-color: #002f5f;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-top: auto;
-}
-
-/* About Us */
-.AboutUs{
-
-}
-
-.mission-box{
-  
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  nav a {
-    display: block;
-    margin: 0.5rem 0;
-  }
-
-  .services {
-    flex-direction: column;
-    align-items: center;
-  }
 }

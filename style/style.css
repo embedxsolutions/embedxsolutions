@@ -58,6 +58,12 @@ body {
   color: #ddd;
 }
 
+.slogan {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #cce0ff;
+}
+
 /* Navigation */
 .nav ul {
   list-style: none;

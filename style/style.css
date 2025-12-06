@@ -75,11 +75,56 @@ body {
 }
 
 .slogan {
-  font-size: 0.85rem;
-  font-style: italic;
+  font-size: 0.9rem;
+  font-weight: 500;
   color: #8bb4ff;
   margin-left: 12px;
   white-space: nowrap;
+  letter-spacing: 0.3px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.slogan-highlight {
+  color: #ffdd57;
+  font-weight: 600;
+  background: linear-gradient(135deg, #ffdd57 0%, #ffa500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle:checked + .hamburger span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* Navigation */
@@ -222,13 +267,16 @@ footer p {
   }
 
   .header-container {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 15px;
+    position: relative;
   }
 
   .brand {
-    width: 100%;
+    flex: 1;
+    min-width: 200px;
   }
 
   .brand-logo {
@@ -244,19 +292,39 @@ footer p {
   }
 
   .slogan {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     margin-left: 0;
     margin-top: 4px;
+    white-space: normal;
   }
 
+  /* Show hamburger menu */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide navigation by default */
   .nav {
     width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    order: 3;
+  }
+
+  /* Show navigation when menu is checked */
+  .menu-toggle:checked ~ .nav {
+    max-height: 400px;
   }
 
   .nav ul {
     flex-direction: column;
-    gap: 6px;
+    gap: 0;
     width: 100%;
+    background: rgba(10, 10, 35, 0.95);
+    border-radius: 8px;
+    padding: 8px 0;
+    margin-top: 8px;
   }
 
   .nav ul li {
@@ -269,6 +337,7 @@ footer p {
     font-size: 16px;
     width: 100%;
     text-align: left;
+    border-radius: 0;
   }
 
   main {
@@ -315,7 +384,7 @@ footer p {
   }
 
   .slogan {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
 
   main h2 {

@@ -47,19 +47,92 @@
 
   <main>
     <section>
-      <h2>Contact Us</h2>
-      <p>We'd love to hear from you! Whether you have a question about our services, need technical support, or want to explore partnership opportunities, our team is ready to assist you.</p>
-      
-      <h3>Get In Touch</h3>
-      <p><strong>Email:</strong> contact@embedxsolutions.com</p>
-      <p><strong>Phone:</strong> +91-82007-26018</p>
-      <p><strong>Location:</strong> Surat, Gujarat, India</p>
-      
-      <h3>Business Hours</h3>
-      <p>Monday - Friday: 9:00 AM - 6:00 PM IST<br>
-         Saturday: 10:00 AM - 2:00 PM IST<br>
-         Sunday: Closed</p>
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <p class="section-subtitle">We'd love to hear from you! Whether you have a question about our services, need technical support, or want to explore partnership opportunities, our team is ready to assist you.</p>
     </section>
+
+    <div class="contact-container">
+      <!-- Contact Form -->
+      <section class="contact-form-section">
+        <h3>Send Us a Message</h3>
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91-XXXXX-XXXXX">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="">Select a topic</option>
+              <option value="general">General Inquiry</option>
+              <option value="services">Services Information</option>
+              <option value="support">Technical Support</option>
+              <option value="partnership">Partnership Opportunity</option>
+              <option value="career">Career Opportunities</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project or inquiry..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </section>
+
+      <!-- Contact Info -->
+      <section class="contact-info-section">
+        <h3>Contact Information</h3>
+        <div class="contact-info-card">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><a href="mailto:contact@embedxsolutions.com">contact@embedxsolutions.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📱</div>
+            <div class="contact-details">
+              <h4>Phone</h4>
+              <p><a href="tel:+918200726018">+91-82007-26018</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Surat, Gujarat, India</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="business-hours">
+          <h4>Business Hours</h4>
+          <div class="hours-list">
+            <div class="hour-item">
+              <span>Monday - Friday</span>
+              <span>9:00 AM - 6:00 PM IST</span>
+            </div>
+            <div class="hour-item">
+              <span>Saturday</span>
+              <span>10:00 AM - 2:00 PM IST</span>
+            </div>
+            <div class="hour-item">
+              <span>Sunday</span>
+              <span>Closed</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer>
